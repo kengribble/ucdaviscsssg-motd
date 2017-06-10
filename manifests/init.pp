@@ -44,5 +44,12 @@
 #
 class motd {
 
+	file { '/etc/update-motd.d/05-puppet':
+		ensure	=> file,
+		owner	=> 'root',
+		group	=> 'root',
+		mode	=> 0755,
+		content	=> template($module_name/05-puppet.erb),
+	}
 
 }
