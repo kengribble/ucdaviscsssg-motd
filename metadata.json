@@ -1,0 +1,15 @@
+{
+  "name": "ucdaviscsssg-motd",
+  "version": "0.1.0",
+  "author": "ucdaviscsssg",
+  "summary": "Modifies Ubuntu 16.04 motd message to include system statistics and an admin or group name",
+  "license": "Apache-2.0",
+  "source": "https://github.com/kengribble/ucdaviscsssg-motd.git",
+  "project_page": "https://github.com/kengribble/ucdaviscsssg-motd",
+  "issues_url": "https://github.com/kengribble/ucdaviscsssg-motd/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
