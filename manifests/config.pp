@@ -42,7 +42,7 @@
 #
 # Copyright 2017 Your name here, unless otherwise noted.
 #
-class motd::config inherits motd {
+class motd::config inherits motd ($content = undef) {
 
 	file { '/etc/update-motd.d/05-puppet':
 		ensure	=> file,
