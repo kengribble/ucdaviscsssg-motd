@@ -2,6 +2,12 @@
 printf "\n"
 echo "*****************************************"
 echo "* This system is configured with Puppet *"
+<%- | Optional[String] $group_name = undef | -%>
+<%# (Declare the $group_name parameter as optional) -%>
+
+<% unless $group_name =~ Undef { -%>
+echo "* by <% $group_name                        *" %>
+<% } -%>
 echo "*****************************************"
 printf "\n"
 date=`date`
