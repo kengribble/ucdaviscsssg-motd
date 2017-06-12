@@ -5,7 +5,7 @@ echo "* This system is configured with Puppet *"
 echo "*****************************************"
 cat "<<EOLMOTD"
 <% unless $motd::content - undef { -%>
-<%= $motd::content" %>
+<%= $motd::content %>
 <% } -%>
 EOLMOTD
 printf "\n"
