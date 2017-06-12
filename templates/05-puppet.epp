@@ -4,9 +4,9 @@ echo "*****************************************"
 echo "* This system is configured with Puppet *"
 echo "*****************************************"
 cat "<<EOLMOTD"
-<% if $motd::content -%>
+<% if $motd::content { -%>
 <%= $motd::content" %>
-<% end -%>
+<% } -%>
 EOLMOTD
 printf "\n"
 date=`date`
