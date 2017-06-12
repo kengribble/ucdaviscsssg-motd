@@ -49,7 +49,7 @@ class motd::config inherits motd {
 		owner	=> 'root',
 		group	=> 'root',
 		mode	=> '0755',
-		content	=> epp('motd/05-puppet.epp', { 'group_name' => "System Support Group(SSG)"),
+		content	=> epp('motd/05-puppet.epp', { 'group_name' => "System Support Group(SSG)" }),
 	}
 
 }
