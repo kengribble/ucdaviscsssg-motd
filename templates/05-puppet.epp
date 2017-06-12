@@ -6,8 +6,8 @@ echo "*****************************************"
 cat "<<EOLMOTD"
 <% if $motd::content -%>
 <%= $motd::content" %>
-EOLMOTD
 <% end -%>
+EOLMOTD
 printf "\n"
 date=`date`
 load=`cat /proc/loadavg | awk '{print $1}'`
