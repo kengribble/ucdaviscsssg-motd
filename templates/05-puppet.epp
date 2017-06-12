@@ -3,8 +3,8 @@ printf "\n"
 echo "*****************************************"
 echo "* This system is configured with Puppet *"
 echo "*****************************************"
-<% if $motd::content -%>
 cat "<<EOLMOTD"
+<% if $motd::content -%>
 <%= $motd::content" %>
 EOLMOTD
 <% end -%>
