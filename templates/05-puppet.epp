@@ -2,10 +2,12 @@
 printf "\n"
 echo "*****************************************"
 echo "* This system is configured with Puppet *"
-<% unless $group_name =~ Undef { -%>
-echo "* by <% $group_name                        *" %>
-<% } -%>
 echo "*****************************************"
+<% if $motd::content -%>
+cat "<<EOLMOTD"
+<%= $motd::content" %>
+EOLMOTD
+<% end -%>
 printf "\n"
 date=`date`
 load=`cat /proc/loadavg | awk '{print $1}'`
