@@ -49,7 +49,7 @@ class motd::config inherits motd {
 		owner	=> 'root',
 		group	=> 'root',
 		mode	=> '0755',
-		content	=> template($module_name/05-puppet.erb),
+		content	=> template('$module_name/05-puppet.erb'),
 	}
 
 }
